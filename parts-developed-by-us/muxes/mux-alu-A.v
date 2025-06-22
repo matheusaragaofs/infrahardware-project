@@ -4,8 +4,8 @@ module Mux_AluA (
     output wire [31:0] result_data
 );
 
-//pc_input - PC data 
-// reg_temp_A_input - Temporary register A data 
+// pc_input - Dados do PC
+// reg_temp_A_input - Dados do registrador temporário A
 
 
     assign result_data = (control_signal == 2'b00) ? pc_input :

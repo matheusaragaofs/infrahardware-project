@@ -4,9 +4,9 @@ module Mux_AluB (
     output wire [31:0] result_data
 );
 
-// reg_temp_B_input - Temporary register B data
-// sign_extended_input - Sign extended immediate 16-32 bits
-// shifted_immediate_input - Sign extended immediate 16-32 bits + left shift by 2
+// reg_temp_B_input - Dados do registrador temporário B
+// sign_extended_input - Imediato com extensão de sinal de 16-32 bits
+// shifted_immediate_input - Imediato com extensão de sinal de 16-32 bits + deslocamento à esquerda por 2
 
 
     assign result_data = (control_signal == 2'b00) ? reg_temp_B_input :
