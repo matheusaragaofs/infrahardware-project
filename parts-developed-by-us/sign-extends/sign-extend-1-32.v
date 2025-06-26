@@ -1,7 +1,13 @@
-module SignalExtension_1bit_to_32bit (
+module SignalExtension_1_to_32_bits (
     input wire single_bit_input,
-    output wire [31:0] extended_output
+    output wire [31:0] output_extended_1_32_bits
 );
-    // Converte 1 bit para 32 bits preenchendo com zeros à esquerda (instruções slt)
-    assign extended_output = {31'b0, single_bit_input};
+//  (instruções SLT)
+
+// single_bit_input - 1 bit de entrada
+// output_extended_1_32_bits - 32 bits de saída
+
+// Converte 1 bit para 32 bits preenchendo com zeros à esquerda 
+
+    assign output_extended_1_32_bits = {31'b0, single_bit_input};
 endmodule
